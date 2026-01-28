@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import static com.codeborne.selenide.Selenide.*;
 import static org.testng.FileAssert.fail;
 
-@Listeners({AllureTestNg.class, TestListener.class})
 public class SelenideLabTest extends BaseTest {
 
     @Test

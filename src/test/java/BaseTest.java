@@ -4,11 +4,11 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Listeners;
 
 @Listeners({AllureTestNg.class, TestListener.class})
-public class BaseTest {
+public abstract class BaseTest {
 
     @BeforeSuite
     public void setup() {
         Configuration.browser = "chrome";
-        Configuration.screenshots = false;
+        Configuration.reportsFolder = "target/selenide-reports";
     }
 }
